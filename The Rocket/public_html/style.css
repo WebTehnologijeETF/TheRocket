@@ -1,0 +1,286 @@
+.wrapper{
+    
+   
+
+   background-image: url('The Rocket-images/Snooker Wallpapers3.jpg');
+   
+  
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  height:240px;
+  width:100%;
+  
+  position: relative;
+  margin: 0;
+  padding:0;
+  
+  
+ 
+}
+#header{
+    display: inline-block;
+    position: relative;
+}
+body{
+    background-color:gainsboro;
+   margin:0;
+   padding:0;
+}
+#header h1{
+    
+    font-family:fantasy;
+    margin-left:30px;
+    margin-top:0px;
+    color:#08430d;
+   text-align: left;
+    padding:0px;
+    font-size:42px;
+}
+
+#header h2{
+    color:#9e0303;
+    
+    font-family:fantasy solid;
+    font-size: 50px;
+    font-style:oblique;
+    
+    margin:-35px 430px;
+    
+    
+}
+#container0{
+    width: 100%;
+     margin: 0 auto;
+     padding: 0 auto;
+     
+    
+}
+#menu{
+    display: inline-block;
+    background-color:#c9cacc;
+    
+    height: 50px;
+    width: 100%;
+    color:white;
+    position:relative;
+    margin-top: 0px;
+   
+    
+}
+#menu ul{
+    display: inline-block;
+    list-style-type: none;
+    color:#9e0303;
+    font-family:fantasy;
+    font-size:20px;
+    margin:0;
+    
+    
+}
+#menu ul li{
+    display:inline-block;
+    
+    margin-top:10px;
+    margin-left: 0.5em;
+    margin-bottom: 10px;
+    
+    padding:5px;
+    
+    border-radius: 10%;
+    border: #e8e8e9 solid 1px;
+    background-color: #e8e8e9;
+    color:#08430d;
+}
+#druga #Contact{
+    
+    margin-right: 50px;
+    
+   
+    
+}
+#menu #druga{
+    
+    margin: 0 auto;
+     padding: 0 auto;
+     float:right;
+    
+}
+#menu #prva{
+    float:left;
+    margin: 0 auto;
+     padding: 0 auto;
+}
+
+#tekst1{
+     font-family:fantasy;
+     background-color:#c9cacc;
+     width: 500px;
+     margin-left: 100px;
+     padding:20px;
+     padding-top:0px;
+     margin-top:50px;
+     margin-bottom:10px;
+     display: inline-block;
+     float:left;
+     height: 330px;
+     color:#08430d;
+}
+#tekst1 p{
+    font-size:17px;
+    
+}
+#tekst1 h1{
+    margin-top:5px;
+    padding-top:10px;
+}
+#tekst1  p span {
+    font-weight: bold;
+    
+}
+#container1{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+}
+#slika1 {
+    
+    margin-top:70px;
+   margin-right: -180px;
+    
+    display: inline-block;
+    position: relative;
+    float:right;
+}
+#slika1 img{
+    position:relative;
+    height: 300px;
+    width: 440px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#container2{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+}
+#tekst2{
+     font-family:fantasy;
+     background-color:#c9cacc;
+     width: 500px;
+     margin-left: 100px;
+     padding:20px;
+     padding-top:0px;
+     margin-top:20px;
+     margin-bottom:20px;
+     display: inline-block;
+     float:left;
+     height: 320px;
+     color:#08430d;
+}
+#tekst2 ul li{
+    font-size:16px;
+    
+}
+#tekst2 ul{
+    margin-top:5px;
+     padding-top:5px;
+}
+#tekst2 h1{
+    margin-top:5px;
+    margin-bottom: 5px;
+    padding-top:10px;
+}
+
+#slika2 {
+    
+    margin-top:50px;
+    margin-right: -180px;
+    display: inline-block;
+    position: relative;
+    float:right;
+}
+#slika2 img{
+    position:relative;
+    height: 300px;
+    width: 440px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#tekst3{
+    font-family:fantasy;
+     background-color:#c9cacc;
+     
+     
+     padding:20px;
+     padding-top:0px;
+     margin-top:20px;
+     margin-bottom:20px;
+     
+    
+     height: auto;
+     color:#08430d;
+     display: inline-block;
+}
+#tekst3 h1{
+    text-decoration: underline;
+    color:#9e0303;
+    text-align: center;
+    margin-top: 20px;
+}
+#tekst3p1 h2{
+    margin-top:5px;
+    margin-bottom: 5px;
+    padding-top:10px;
+    text-align: left;
+    
+    
+}
+#tekst3p1 img{
+    margin-top: 0px;
+    margin-right: 30px;
+    width: 100px;
+    height:100px;
+    float:left;
+ 
+    display: inline-block;
+}
+#tekst3p1 p{
+    margin-top: 0px;
+    
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+#tekst3p1 .shaded{
+   color:gray;
+   text-align: left;
+   display: inline-block;
+   float:left;
+}
+#tekst3p1 h3 {
+    text-align: left;
+    
+    margin-bottom: 20px;
+}
+#tekst3p1 h3 a{
+   float:right;
+   display: inline-block;
+   margin-top:-25px;
+   margin-right:80px;
+   padding: 0;
+}
+#container3{
+    width: 70%;
+     margin: 0 auto;
+     padding: 0 auto;
+     
+    
+}
+/* 
+    Created on : Mar 25, 2015, 2:29:43 PM
+    Author     : azra
+*/
+
