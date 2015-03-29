@@ -79,7 +79,7 @@ left:0;
 }
 .menu ul{
     list-style-type: none;
-    color:#9e0303;
+    
     font-size:20px;
     margin:5px;
     margin-top: 9px;
@@ -209,16 +209,47 @@ left:0;
    display: inline-block;
    float:left;
 }
+
 a:link{
   color:#9e0303;
   text-decoration: none;
+  
 }
 a:hover {
     color:#f92e2e;
+   
+     text-decoration: none;
 }
 a:visited{
     color:#08430d; 
+    
+     text-decoration: none;
 }
+ a:active{
+   
+    text-decoration: underline;
+}
+li a:link{
+    color:#08430d;
+    text-decoration: none;
+}
+li a:hover{
+    color:#9e0303;
+     text-decoration: none;
+}
+
+/*
+a.link, a.visited{
+    color:green;
+}
+a.visited{
+    color:#08430d; 
+    
+     text-decoration: none;
+}
+a.selected:link, a.selected:visited{
+    color:#9e0303;
+}*/
 
 
 .footer{
@@ -321,3 +352,67 @@ a:visited{
     Author     : azra
 */
 
+/*RANKINGS.HTML -------------------------------------------------------*/
+
+table{
+    margin-top: 50px;
+}
+table,th,td{
+    border: 1px solid black;
+    width:900px;
+    
+}
+th{
+    color:#9e0303;
+    font-size:25px;
+}
+td{
+    color:#08430d;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*PRODUCTS.HTML----------------------------------------------------------*/
+
+#products li{
+    padding-top: -25px;
+    list-style-image:  url('The Rocket-images/icon.png');
+    resize: both;
+    font-weight: bold;
+    font-size:20px;
+}
+
+#products p{
+    color:#08430d;
+    padding-left: 40px;
+}
+
+/*CONTACT.HTML----------------------------------------------------------
+Radi na Chrome-u i Mozilli*/
+form input,select{
+    display: block;
+    margin-bottom: 10px;
+}
+
+form{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 18px;
+}
+#forma h4,p{
+    color:#08430d;
+}
+
+#forma p{
+    margin: 0px;
+    padding-left: 5px;
+    
+}
+#forma h2{
+    color:#9e0303;
+}
+#forma span{
+    font-weight: bold;
+    margin-right: 5px;
+    
+}
