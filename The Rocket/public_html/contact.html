@@ -52,34 +52,125 @@ and open the template in the editor.
             <h4>Please contact The Rocket team using following information:</h4>
             <p><span>Telephone:</span> 0191 241 0660  </p>          
             <p> <span> Address:</span> Higham Place,Newcastle upon Tyne, NE1 8AF  </p>
-            <p> <span>Email ID:</span> therocket@gmail.com</p>
+            <p> <span>Email:</span> therocket@gmail.com</p>
+            <div id="required-fields" class="redstar">*-required fields</div>
             <form>
-                <label>Name:</label>
-                <input type="text" name="username">
                 
+                
+                <div>
+                    <div>
+                        <label><span class="redstar">*</span>Name:</label>
+                    </div>
+                    <input id="ime-input" onblur="validirajIme();" type="text" class="my-input" name="name">
+                    
+                    <span id="ok-ime-input" class="validation-thumbnail-invisible">
+                        <img alt="" class="zeleno" src="The Rocket-images/check">
+                    </span>
+                    
+                    <span id="notok-ime-input" class="validation-thumbnail-invisible">
+                        <img alt="" class="crveno" src="The Rocket-images/error">
+                        <span id="message-error1" class="validation-error">Name is too short
+                        </span></span>
+                </div>
+                
+                <div>
+                    <div>
+                <label><span class="redstar">*</span>Surname:</label>
+                    </div>
+                <input id="prezime-input" class="my-input" onblur="validirajPrezime();" type="text" name="surname">
+                <span id="ok-prezime-input" class="validation-thumbnail-invisible">
+                        <img alt="" class="zeleno" src="The Rocket-images/check">
+                    </span>
+                    <span id="notok-prezime-input" class="validation-thumbnail-invisible">
+                        <img alt="" class="crveno" src="The Rocket-images/error">
+                        <span id="message-error2" class="validation-error">Surname is too short
+                        </span></span>
+                </div>
+                
+                <div>
+                <div>
                 <label>Telephone:</label>
-                <input type="text" name="username">
+                </div>
+                <input id="telefon-input" class="my-input" onblur="validirajTelefon();" type="text" name="telephone">   
+                <span id="ok-telefon-input" class="validation-thumbnail-invisible">
+                    <img alt="" class="zeleno" src="The Rocket-images/check">
+                </span>   
+                <span id="notok-telefon-input" class="validation-thumbnail-invisible">
+                    <img alt="" class="crveno" src="The Rocket-images/error">
+                    <span id="message-error3" class="validation-error">Phone should be in this format: +XXXX-XXX-XXX
+                        </span>
+                </span>
+                </div>
                 
-                <label>Email:</label>
-                <input type="text" name="username">
                 
-                <label>Adress:</label>
-                <input type="text" name="username">
+                <div>
+                <div>
+                <label><span class="redstar">*</span>Email:</label>
+                </div>
+                  <input id="email-input" class="my-input" onblur="validirajEmail();" type="text" name="email">
+                  <span id="ok-email-input" class="validation-thumbnail-invisible">
+                      <img alt="" class="zeleno" src="The Rocket-images/check">
+                  </span>
+                  <span id="notok-email-input" class="validation-thumbnail-invisible">
+                      <img alt="" class="crveno" src="The Rocket-images/error">
+                      <span id="message-error4" class="validation-error"> Email should be in this format: email@email.com
+                          
+                      </span>
+                  </span>
+                </div>
                 
-                <label>City:</label>
-                <input type="text" name="username">
+                <div>
+                    <div>
+                <label><span class="redstar">*</span>Address:</label>
+                    </div>
+                <input id="address-input" class="my-input" onblur="validirajAdresu();" type="text" name="adresa">
+                <span id="ok-address-input" class="validation-thumbnail-invisible">
+                    <img alt="" class="zeleno" src="The Rocket-images/check">  
+                </span>
                 
-                <label>Country:</label>
-                <select name="country">
-                <option value="BiH" selected>BiH</option>
-                <option value="USA">USA</option>
-                <option value="Australia">Australia</option>
+                <span id="notok-address-input" class="validation-thumbnail-invisible">
+                    <img alt="" class="crveno" src="The Rocket-images/error">
+                      <span id="message-error5" class="validation-error"> Invalid address
+                          
+                      </span>
+                    
+                </span>
+                
+                
+                </div>
+                
+                <div>
+                <div>
+                <label><span class="redstar">*</span>Country:</label>
+                </div>
+                <select id="country-input" class="my-input" onchange="validirajGrad();" name="country">
+                <option id="value1" value="BiH" selected>BiH</option>
+                <option id="value2" value="USA">USA</option>
+                <option id="value3" value="Australia">Australia</option>
               </select>
+                </div>
                 
-                <label>Description:</label>
-                <input type="text" name="username">
+                <div>
+                <div>
+                    <label><span class="redstar">*</span>City:</label></div>
+                    <select id="city-input" class="my-input" name="city">
+                <option id="gradvalue1" value="Sarajevo" selected>Sarajevo</option>
+                <option id="gradvalue2" value="Zenica">Zenica</option>
+                <option id="gradvalue3" value="Tuzla">Tuzla</option>
+              </select>
+                </div>
                 
-                 <input type="submit" name="submit" value="Submit">
+               <div id="description">
+                   <div>
+                       <label>Description:</label></div>
+                
+                    <textarea id="description-input" name="description"></textarea>
+             
+                </div>
+                
+            
+                 
+                <input onclick="return validirajSve();" type="submit" name="submit" value="Submit">
             </form>
         </div>
         </div>
@@ -107,5 +198,6 @@ and open the template in the editor.
            
            
        </div>
+        <script src="validacija.js"></script>
     </body>
 </html>

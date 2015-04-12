@@ -416,3 +416,45 @@ form{
     margin-right: 5px;
     
 }
+
+.my-input {
+    display: inline;    
+}
+
+.validation-thumbnail-visible {
+    display: inline;
+}
+
+.validation-thumbnail-invisible {
+    display: none;
+}
+
+.validation-error {
+    color: red;
+    font-size: 15px;
+    opacity: 0.70;
+}
+.zeleno{
+    width: 15px;
+    height: 15px;
+}
+
+.crveno{
+    width: 15px;
+    height: 15px;
+}
+.redstar{
+    color:#9e0303;
+    
+}
+
+#required-fields{
+    margin-top: 10px;
+    padding-top:10px;
+    
+}
+#description-input{
+width:300px;
+height: 80px;
+padding: 1px;
+}
