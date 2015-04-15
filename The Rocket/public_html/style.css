@@ -79,28 +79,51 @@ left:0;
 }
 .menu ul{
     list-style-type: none;
-    
+   
     font-size:20px;
     margin:5px;
-    margin-top: 9px;
+    margin-top: 7px;
     padding: 5px;
+    
    
 }
 .menu ul li{
     
-    padding:5px;   
-    border-radius: 10%;
-    border: #e8e8e9 solid 1px;
-    background-color: #e8e8e9;
-    display: inline;
-    margin: 0;
+   
+    padding:5px;
+     margin: 0;
+    display: inline-block;
+    
+    
 }
+.menu #prva li a{
+ background-color: #e8e8e9;
+ border-radius: 10%;
+    border: #e8e8e9 solid 1px;
+    padding:5px;   
+   
+}
+
+.menu #druga li a{
+     background-color: #e8e8e9;
+ border-radius: 10%;
+    border: #e8e8e9 solid 1px;
+    padding:5px;   
+}
+.menu ul li ul{
+    
+}
+    
+
 .menu #prva{
   float:left;
-  
+ 
 }
 .menu #druga{
      float:right; 
+    
+     
+     
 }
 
 
@@ -427,6 +450,40 @@ form{
 
 .validation-thumbnail-invisible {
     display: none;
+}
+
+.menu-invisible{
+    width:100px;
+    visibility: hidden;
+   
+}
+.menu-invisible li{
+   
+}
+.menu-visible{
+    border-radius: 10%;
+    border: #e8e8e9 solid 1px;
+    background-color: #e8e8e9;
+    width: 100px;
+    visibility:visible;
+}
+.menu-visible li{
+
+   
+}
+.menu-visible li a{
+   
+   
+}
+#dine-drink{
+    
+       position:relative;
+       top:73px;
+
+}
+.menu #prva {
+     position: relative;
+     bottom: 75px;
 }
 
 .validation-error {

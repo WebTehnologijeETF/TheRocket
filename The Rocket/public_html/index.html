@@ -31,9 +31,16 @@ and open the template in the editor.
              <ul id="prva">
                  <li><a href="index.html">Home</a></li>
                  <li><a href="index.html">Play</a></li>
-                 <li><a href="index.html">Dine &amp; Drink</a></li>
+                 <li id="dine-drink"><a  href="index.html" onmouseover="prikaziMeni();" onmouseout="sakrijMeni();">Dine &amp; Drink</a>
+                     <ul id="drop-down" class="menu-invisible"  >
+                         <li><a href="index.html">Restaurant</a></li>
+                         <li><a href="index.html">Bar</a></li>
+                         
+                     </ul>
+                 
+                 </li>
                  <li><a href="index.html">Tournaments</a></li>
-                 <li><a href="rankings.html" class="selected">Rankings</a></li>
+                 <li><a href="rankings.html" >Rankings</a></li>
                  <li><a href="index.html">Specials</a></li>
                  <li><a href="index.html">Facilities</a></li>
                  <li><a href="products.html">Products</a></li>
@@ -197,6 +204,6 @@ Telephone: 0191 241 0660</p></div>
             </div>
         </div>  
         
-        
+        <script src="drop-down-menu.js"></script>
     </body>
 </html>
