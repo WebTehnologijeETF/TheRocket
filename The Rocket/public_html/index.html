@@ -29,27 +29,27 @@ and open the template in the editor.
          <div class="menu" >
             
              <ul id="prva" >
-                 <li><a href="index.html">Home</a></li>
-                 <li><a href="index.html" onmouseover="sakrijMeni();">Play</a></li>
-                 <li id="dine-drink"><a  href="index.html" onmouseover="prikaziMeni();" >Dine &amp; Drink</a>
+                 <li><a onClick="replace('index.html')">Home</a></li>
+                 <li><a onClick="replace('index.html')" onmouseover="sakrijMeni();">Play</a></li>
+                 <li id="dine-drink"><a  onClick="replace('index.html')" onmouseover="prikaziMeni();" >Dine &amp; Drink</a>
                      <ul id="drop-down" class="menu-invisible" onmouseover="prikaziMeni();" onmouseout="sakrijMeni();" >
-                         <li><a href="index.html">Restaurant</a></li>
-                         <li><a href="index.html">Bar</a></li>
+                         <li><a onClick="replace('index.html')">Restaurant</a></li>
+                         <li><a onClick="replace('index.html')">Bar</a></li>
                          
                      </ul>
                  
                  </li>
-                 <li><a href="index.html" onmouseover="sakrijMeni();" >Tournaments</a></li>
-                 <li><a href="rankings.html" >Rankings</a></li>
-                 <li><a href="index.html">Specials</a></li>
-                 <li><a href="index.html">Facilities</a></li>
-                 <li><a href="products.html">Products</a></li>
+                 <li><a onClick="replace('index.html')" onmouseover="sakrijMeni();" >Tournaments</a></li>
+                 <li><a onClick="replace('rankings.html')" >Rankings</a></li>
+                 <li><a onClick="replace('index.html')">Specials</a></li>
+                 <li><a onClick="replace('index.html')">Facilities</a></li>
+                 <li><a onClick="replace('products.html')">Products</a></li>
              </ul>
              
              <ul id="druga">
-                 <li><a href="index.html">Register</a></li>
-                 <li><a href="index.html">Sing in</a></li>
-                 <li><a href="contact.html">Contact</a></li>
+                 <li><a onClick="replace('index.html')">Register</a></li>
+                 <li><a onClick="replace('index.html')">Sing in</a></li>
+                 <li><a onClick="replace('contact.html')">Contact</a></li>
              </ul>
         </div>
         </div>
@@ -205,5 +205,6 @@ Telephone: 0191 241 0660</p></div>
         </div>  
         
         <script src="drop-down-menu.js"></script>
+        <script src="spa.js"></script>
     </body>
 </html>

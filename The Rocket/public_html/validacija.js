@@ -167,9 +167,53 @@ function validirajGrad()
     return false;
 }
 
+var statusZip="";
+
+function Servis(zip)
+{
+   
+    var mjesto=document.getElementById("city-input").value;
+    
+    
+    var ajax=new XMLHttpRequest();
+
+    ajax.onreadystatechange= function(){
+         if (ajax.readyState === 4 && ajax.status === 200){
+            statusZip = JSON.parse(ajax.responseText);
+
+        }
+        if (ajax.readyState === 4 && ajax.status === 404)
+        alert("Greska: nepoznat URL");  
+  
+
+    }
+ 	
+    ajax.open("GET","http://zamger.etf.unsa.ba/wt/postanskiBroj.php?mjesto="+mjesto+ "&postanskiBroj=" + zip,false);
+    ajax.send();
+    
+    
+    
+}
+
+function validirajZIP(textbox)
+{
+    Servis(textbox.value);
+
+
+	if(statusZip.hasOwnProperty("greska"))
+        {document.getElementById("notok-zip-input").className="validation-thumbnail-visible";
+        document.getElementById("ok-zip-input").className="validation-thumbnail-invisible";
+        return true;}
+        
+	else if(statusZip.hasOwnProperty("ok"))
+	{document.getElementById("notok-zip-input").className="validation-thumbnail-invisible";
+        document.getElementById("ok-zip-input").className="validation-thumbnail-visible";
+        return false;}
+}
+
 function validirajSve()
 {
     return(validirajIme() && validirajPrezime() && validirajTelefon()
-            && validirajEmail() && validirajAdresu() && validirajGrad());
+            && validirajEmail() && validirajAdresu() && validirajGrad() && validirajZIP());
 }
 

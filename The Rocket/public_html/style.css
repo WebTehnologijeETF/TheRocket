@@ -482,8 +482,10 @@ form{
 
 }
 .menu #prva {
-     position: relative;
-     bottom: 75px;
+     position: absolute;
+     //bottom: 75px;
+     top: 165px;
+     
 }
 
 .validation-error {
@@ -514,4 +516,36 @@ form{
 width:300px;
 height: 80px;
 padding: 1px;
+}
+
+.profile-picture{
+    width: 50px;
+    height: 50px;
+}
+.player-field{
+    display: inline;
+   float: left;
+   margin: 10px;
+}
+#modify-player{
+    display: inline-block;
+ 
+}
+
+#player-buttons{
+    display: block;
+    width:44%;
+    margin:0 auto;
+    
+    
+
+}
+#player-buttons input{
+    display:inline-block;
+    height:30px;
+    width: 100px;
+    margin-left:10px;
+    
+    
+    
 }
