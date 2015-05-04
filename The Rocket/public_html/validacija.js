@@ -169,35 +169,10 @@ function validirajGrad()
 
 var statusZip="";
 
-function Servis(zip)
-{
-   
-    var mjesto=document.getElementById("city-input").value;
-    
-    
-    var ajax=new XMLHttpRequest();
-
-    ajax.onreadystatechange= function(){
-         if (ajax.readyState === 4 && ajax.status === 200){
-            statusZip = JSON.parse(ajax.responseText);
-
-        }
-        if (ajax.readyState === 4 && ajax.status === 404)
-        alert("Greska: nepoznat URL");  
-  
-
-    }
- 	
-    ajax.open("GET","http://zamger.etf.unsa.ba/wt/postanskiBroj.php?mjesto="+mjesto+ "&postanskiBroj=" + zip,false);
-    ajax.send();
-    
-    
-    
-}
 
 function validirajZIP(textbox)
 {
-    Servis(textbox.value);
+    
 
 
 	if(statusZip.hasOwnProperty("greska"))
@@ -210,6 +185,35 @@ function validirajZIP(textbox)
         document.getElementById("ok-zip-input").className="validation-thumbnail-visible";
         return false;}
 }
+
+function Servis(zip)
+{
+   
+    var mjesto=document.getElementById("city-input").value;
+    
+    
+    var ajax=new XMLHttpRequest();
+
+    ajax.onreadystatechange= function(){
+         if (ajax.readyState === 4 && ajax.status === 200){
+            statusZip = JSON.parse(ajax.responseText);
+            validirajZIP(statusZip);
+
+        }
+        if (ajax.readyState === 4 && ajax.status === 404)
+        alert("Greska: nepoznat URL");  
+  
+
+    };
+ 	
+    ajax.open("GET","http://zamger.etf.unsa.ba/wt/postanskiBroj.php?mjesto="+mjesto+ "&postanskiBroj=" + zip.value,true);
+    ajax.send();
+    
+    
+    
+}
+
+
 
 function validirajSve()
 {

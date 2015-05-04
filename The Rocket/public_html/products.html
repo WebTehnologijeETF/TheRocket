@@ -5,52 +5,8 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <link href="style.css" rel="stylesheet" type="text/css"/>
-        <title>The Rocket</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-       <div class="parentWrapper">
-        <div class="container">
-        <div class="header">
-            <h1>Billiards and Snooker Club </h1>
-            <h2><img alt="Cover" src="The Rocket-images/coollogo_com-792718.png"/></h2>
-            <!-- <img id="header-slika" src="The Rocket-images/images.jpg" />-->
-        </div>
-        </div>
-           
-        
-        <div class="container">
-         <div class="menu" >
-            
-             <ul id="prva" >
-                 <li><a onClick="replace('index.html')">Home</a></li>
-                 <li><a onClick="replace('index.html')" onmouseover="sakrijMeni();">Play</a></li>
-                 <li id="dine-drink"><a  onClick="replace('index.html')" onmouseover="prikaziMeni();" >Dine &amp; Drink</a>
-                     <ul id="drop-down" class="menu-invisible" onmouseover="prikaziMeni();" onmouseout="sakrijMeni();" >
-                         <li><a onClick="replace('index.html')">Restaurant</a></li>
-                         <li><a onClick="replace('index.html')">Bar</a></li>
-                         
-                     </ul>
-                 
-                 </li>
-                 <li><a onClick="replace('index.html')" onmouseover="sakrijMeni();" >Tournaments</a></li>
-                 <li><a onClick="replace('rankings.html')" >Rankings</a></li>
-                 <li><a onClick="replace('index.html')">Specials</a></li>
-                 <li><a onClick="replace('index.html')">Facilities</a></li>
-                 <li><a onClick="replace('products.html')">Products</a></li>
-             </ul>
-             
-             <ul id="druga">
-                 <li><a onClick="replace('index.html')">Register</a></li>
-                 <li><a onClick="replace('index.html')">Sing in</a></li>
-                 <li><a onClick="replace('contact.html')">Contact</a></li>
-             </ul>
-        </div>
-        </div>
-           
+
+    <div id="replace">
           <div class="content">
         <div class="wrapper">
         <div class="container">
@@ -76,7 +32,7 @@ and open the template in the editor.
         </div>
           </div>
         
-         <div class="parentFooter">
+  <div id="parentFooter">
             <div class="container">
         <div class="footer">
             
@@ -89,15 +45,24 @@ and open the template in the editor.
              <h4>For the latest offers, news and daft stuff, follow us on 
                     Twitter and Facebook. </h4></div>
             </div>
-            
+            <!--
+            <div class="FT2">
+              
+                <h2>Find Us</h2>
+                <img  alt="map" src="The Rocket-images/map-2.png"/>
+                
+                <div class="FT1">
+                <p>The Rocker Billiards and Snooker Club, Hadrian House, 
+Higham Place,Newcastle upon Tyne, NE1 8AF  
+Telephone: 0191 241 0660</p></div>
+                
+            </div>
+           -->
         </div>
         </div>
-         </div>
-           
-           
-           
-       </div>
-        <script src="drop-down-menu.js"></script>
-        <script src="spa.js"></script>
-    </body>
+            </div>
+   </div>
+    
+    
+    
 </html>

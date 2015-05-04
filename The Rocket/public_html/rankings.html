@@ -5,56 +5,13 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <link href="style.css" rel="stylesheet" type="text/css"/>
-        <title>The Rocket</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-       <div class="parentWrapper">
-        <div class="container">
-        <div class="header">
-            <h1>Billiards and Snooker Club </h1>
-            <h2><img alt="Cover" src="The Rocket-images/coollogo_com-792718.png"/></h2>
-            <!-- <img id="header-slika" src="The Rocket-images/images.jpg" />-->
-        </div>
-        </div>
-           
-        
-        <div class="container">
-         <div class="menu" >
-            
-             <ul id="prva" >
-                 <li><a onClick="replace('index.html')">Home</a></li>
-                 <li><a onClick="replace('index.html')" onmouseover="sakrijMeni();">Play</a></li>
-                 <li id="dine-drink"><a  onClick="replace('index.html')" onmouseover="prikaziMeni();" >Dine &amp; Drink</a>
-                     <ul id="drop-down" class="menu-invisible" onmouseover="prikaziMeni();" onmouseout="sakrijMeni();" >
-                         <li><a onClick="replace('index.html')">Restaurant</a></li>
-                         <li><a onClick="replace('index.html')">Bar</a></li>
-                         
-                     </ul>
-                 
-                 </li>
-                 <li><a onClick="replace('index.html')" onmouseover="sakrijMeni();" >Tournaments</a></li>
-                 <li><a onClick="replace('rankings.html')" >Rankings</a></li>
-                 <li><a onClick="replace('index.html')">Specials</a></li>
-                 <li><a onClick="replace('index.html')">Facilities</a></li>
-                 <li><a onClick="replace('products.html')">Products</a></li>
-             </ul>
-             
-             <ul id="druga">
-                 <li><a onClick="replace('index.html')">Register</a></li>
-                 <li><a onClick="replace('index.html')">Sing in</a></li>
-                 <li><a onClick="replace('contact.html')">Contact</a></li>
-             </ul>
-        </div>
-        </div>
+
            
           <div class="content">
         <div class="wrapper">
         <div class="container">
-            <table>
+            <table id="rankings-table"></table>
+            <!--<table>
                 
                 <tr>
                     <TH>Name of the player</TH>
@@ -98,34 +55,54 @@ and open the template in the editor.
                     
                 </tr>
             </table>
+               
+               -->
             
+            <h2 id="modify-player-title">Manage players</h2>
             <form id="modify-player">
-                <div class="player-field">
-                <label>Name of the player</label>
-                <input>
+                
+                
+                <div id="input-wraper">
+                <div id="inputs">
+                    <div class="player-field">
+                        <label>Name of the player</label>
+                        <input  id="name">
+                    </div>
+                
+                    <div class="player-field">
+                        <label>Picture URL</label>
+                        <input id="picture">
+                    </div>
+                
+                    <div class="player-field">
+                        <label>Career</label>
+                        <input id="description">
+                    </div>
+                
+                    <div class="player-field">
+                        <label>Points</label>
+                        <input id="points">
+                    </div>
+                
+                    <div class="player-field" id="ID">
+                        <label>ID</label>
+                        <input id="id">
+                    </div>
+                    <p>Fill ID field only if you want to modify or delete a player.</p>
+                    
+                </div>
                 </div>
                 
-                <div class="player-field">
-                <label>Picture URL</label>
-                <input>
-                </div>
-                
-                <div class="player-field">
-                <label>Career</label>
-                <input>
-                </div>
-                
-                <div class="player-field">
-                <label>Points</label>
-                <input>
-                </div>
                 <br>
+                
                     
                 <div id="player-buttons">
-                   
-                <input type="button" value="Add">
-                <input type="button" value="Modify">
-                <input type="button" value="Delete">
+                     <br>
+                <br>
+                 
+                <input onClick="addElement();" type="button" value="Add">
+                <input onClick="modifyElement();" type="button" value="Modify">
+                <input onClick="deleteElement(-1);" type="button" value="Delete">
                    
                 </div>
                        
@@ -155,8 +132,8 @@ and open the template in the editor.
            
            
            
-       </div>
-        <script src="drop-down-menu.js"></script>
-        <script src="spa.js"></script>
-    </body>
+       
+        
+        
+    
 </html>

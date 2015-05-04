@@ -5,51 +5,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <link href="style.css" rel="stylesheet" type="text/css"/>
-        <title>The Rocket</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-       <div class="parentWrapper">
-        <div class="container">
-        <div class="header">
-            <h1>Billiards and Snooker Club </h1>
-            <h2><img alt="Cover" src="The Rocket-images/coollogo_com-792718.png"/></h2>
-            <!-- <img id="header-slika" src="The Rocket-images/images.jpg" />-->
-        </div>
-        </div>
-           
-        
-        <div class="container">
-          <div class="menu" >
-            
-             <ul id="prva" >
-                 <li><a onClick="replace('index.html')">Home</a></li>
-                 <li><a onClick="replace('index.html')" onmouseover="sakrijMeni();">Play</a></li>
-                 <li id="dine-drink"><a  onClick="replace('index.html')" onmouseover="prikaziMeni();" >Dine &amp; Drink</a>
-                     <ul id="drop-down" class="menu-invisible" onmouseover="prikaziMeni();" onmouseout="sakrijMeni();" >
-                         <li><a onClick="replace('index.html')">Restaurant</a></li>
-                         <li><a onClick="replace('index.html')">Bar</a></li>
-                         
-                     </ul>
-                 
-                 </li>
-                 <li><a onClick="replace('index.html')" onmouseover="sakrijMeni();" >Tournaments</a></li>
-                 <li><a onClick="replace('rankings.html')" >Rankings</a></li>
-                 <li><a onClick="replace('index.html')">Specials</a></li>
-                 <li><a onClick="replace('index.html')">Facilities</a></li>
-                 <li><a onClick="replace('products.html')">Products</a></li>
-             </ul>
-             
-             <ul id="druga">
-                 <li><a onClick="replace('index.html')">Register</a></li>
-                 <li><a onClick="replace('index.html')">Sing in</a></li>
-                 <li><a onClick="replace('contact.html')">Contact</a></li>
-             </ul>
-        </div>
-        </div>
+   
            
           <div class="content">
         <div class="wrapper">
@@ -171,7 +127,7 @@ and open the template in the editor.
                 <div>
                     <div>
                     <label><span class="redstar">*</span>ZIP code:</label></div>
-                    <input id="zip-input" class="my-input" name="zip" onblur="validirajZIP(this)" type="text" >
+                    <input id="zip-input" class="my-input" name="zip" onblur="Servis(this)" type="text" >
                     
                     <span id="ok-zip-input" class="validation-thumbnail-invisible">
                     <img alt="" class="zeleno" src="The Rocket-images/check">  
@@ -224,9 +180,7 @@ and open the template in the editor.
            
            
            
-       </div>
-        <script src="validacija.js"></script>
-        <script src="drop-down-menu.js"></script>
-        <script src="spa.js"></script>
-    </body>
+       
+        
+    
 </html>
