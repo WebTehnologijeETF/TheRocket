@@ -10,21 +10,21 @@ and open the template in the editor.
           <div class="content">
         <div class="wrapper">
         <div class="container">
-            <div id="forma">
+            <div id="forma" >
             <h2>Get in touch with us</h2>
             <h4>Please contact The Rocket team using following information:</h4>
             <p><span>Telephone:</span> 0191 241 0660  </p>          
             <p> <span> Address:</span> Higham Place,Newcastle upon Tyne, NE1 8AF  </p>
             <p> <span>Email:</span> therocket@gmail.com</p>
             <div id="required-fields" class="redstar">*-required fields</div>
-            <form>
+            <form action="contact_form.php" method="POST">
                 
                 
                 <div>
                     <div>
                         <label><span class="redstar">*</span>Name:</label>
                     </div>
-                    <input id="ime-input" onblur="validirajIme();" type="text" class="my-input" name="name">
+                    <input id="ime-input"  type="text" class="my-input" name="name">
                     
                     <span id="ok-ime-input" class="validation-thumbnail-invisible">
                         <img alt="" class="zeleno" src="The Rocket-images/check">
@@ -40,7 +40,7 @@ and open the template in the editor.
                     <div>
                 <label><span class="redstar">*</span>Surname:</label>
                     </div>
-                <input id="prezime-input" class="my-input" onblur="validirajPrezime();" type="text" name="surname">
+                <input id="prezime-input" class="my-input" type="text" name="surname">
                 <span id="ok-prezime-input" class="validation-thumbnail-invisible">
                         <img alt="" class="zeleno" src="The Rocket-images/check">
                     </span>
@@ -54,7 +54,7 @@ and open the template in the editor.
                 <div>
                 <label>Telephone:</label>
                 </div>
-                <input id="telefon-input" class="my-input" onblur="validirajTelefon();" type="text" name="telephone">   
+                <input id="telefon-input" class="my-input"  type="text" name="telephone">   
                 <span id="ok-telefon-input" class="validation-thumbnail-invisible">
                     <img alt="" class="zeleno" src="The Rocket-images/check">
                 </span>   
@@ -70,7 +70,7 @@ and open the template in the editor.
                 <div>
                 <label><span class="redstar">*</span>Email:</label>
                 </div>
-                  <input id="email-input" class="my-input" onblur="validirajEmail();" type="text" name="email">
+                  <input id="email-input" class="my-input"  type="text" name="email">
                   <span id="ok-email-input" class="validation-thumbnail-invisible">
                       <img alt="" class="zeleno" src="The Rocket-images/check">
                   </span>
@@ -86,8 +86,8 @@ and open the template in the editor.
                     <div>
                 <label><span class="redstar">*</span>Address:</label>
                     </div>
-                <input id="address-input" class="my-input" onblur="validirajAdresu();" type="text" name="adresa">
-                <span id="ok-address-input" class="validation-thumbnail-invisible">
+                <input id="address-input" class="my-input"  type="text" name="address">
+                <!--<span id="ok-address-input" class="validation-thumbnail-invisible">
                     <img alt="" class="zeleno" src="The Rocket-images/check">  
                 </span>
                 
@@ -97,7 +97,7 @@ and open the template in the editor.
                           
                       </span>
                     
-                </span>
+                </span>-->
                 
                 
                 </div>
@@ -106,22 +106,43 @@ and open the template in the editor.
                 <div>
                 <label><span class="redstar">*</span>Country:</label>
                 </div>
-                <select id="country-input" class="my-input" onchange="validirajGrad();" name="country">
+                <select id="country-input" class="my-input"  name="country" onchange="document.getElementById('text_content1').value=this.options[this.selectedIndex].text">
                 <option id="value1" value="BiH" selected>BiH</option>
                 <option id="value2" value="USA">USA</option>
                 <option id="value3" value="Australia">Australia</option>
               </select>
+              <!-- <input type="hidden" name="test_text1" id="text_content1" value="" />-->
                 </div>
                 
-                <div>
+                 <div>
                 <div>
                     <label><span class="redstar">*</span>City:</label></div>
-                    <select id="city-input" class="my-input" name="city">
+                    <select id="city-input" class="my-input" name="city" onchange="document.getElementById('text_content').value=this.options[this.selectedIndex].text">
                 <option id="gradvalue1" value="Sarajevo" selected>Sarajevo</option>
                 <option id="gradvalue2" value="Zenica">Zenica</option>
                 <option id="gradvalue3" value="Tuzla">Tuzla</option>
+                <option id="gradvalue4" value="Washington">Washington</option>
+                <option id="gradvalue5" value="New York">New York</option>
+                <option id="gradvalue6" value="Los Angeles">Los Angeles</option>
+                <option id="gradvalue7" value="Sydney">Sydney</option>
+                <option id="gradvalue8" value="Melbourne">Melbourne</option>
+                <option id="gradvalue9" value="Canberra">Canberra</option>
               </select>
-                </div>
+              <!--<input type="hidden" name="test_text" id="text_content" value="" />
+                <span id="ok-city-input" class="<?php if(correctCity($_POST['test_text1']['test_text'])){ echo "validation-thumbnail-visible"; } else{echo "validation-thumbnail-invisible";} ?>">
+                    <img alt="" class="zeleno" src="The Rocket-images/check">  
+                </span>
+                
+                <span id="notok-city-input" class="<?php if(correctCity($_POST['test_text1']['test_text'])){ echo "validation-thumbnail-invisible"; } else{echo "validation-thumbnail-visible";} ?>">
+                    <img alt="" class="crveno" src="The Rocket-images/error">
+                      <span id="message-error6" class="validation-error"> You must choose the city from selected country.
+                          
+                      </span>
+                    
+                </span>
+                
+                </div>-->
+            </div>
                 
                 
                 <div>
@@ -153,7 +174,7 @@ and open the template in the editor.
                 
             
                  
-                <input onclick="return validirajSve();" type="submit" name="submit" value="Submit">
+                <input type="submit" name="submit" value="Submit">
             </form>
         </div>
         </div>

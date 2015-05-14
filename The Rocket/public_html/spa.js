@@ -1,5 +1,5 @@
 
-window.onload=replace("homepage.html");
+//window.onload=replace("homepage.html");
 function replace(url)
 {
    
