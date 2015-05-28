@@ -3,7 +3,7 @@
 function replace(url)
 {
    
-    //if(url=== "rankings.html")window.onload = loadElements;
+    //if(url=== "read_more.php")window.onload = loadElements;
     
     var ajax=new XMLHttpRequest();
 
@@ -22,6 +22,18 @@ function replace(url)
  	
     ajax.open("GET",url,true);
     ajax.send();
+}
+
+function openReadMore(id){
+    var form="novost"+id;
+    var element=document.getElementById(form);
+    element.submit();
+}
+
+function showComments()
+{
+    var element=document.getElementById("komentar");
+    element.style.visibility="visible";
 }
 
 //function callback(data) {

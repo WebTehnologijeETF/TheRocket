@@ -574,10 +574,117 @@ padding: 1px;
     
        
 }
+
+.rm{
+  color:#08430d;  
+
+}
+
+.rm3{
+  color:#08430d;
+  margin-left: 30px;   
+}
+
+#rm2{
+  color:#08430d;    
+}
 .data{
     border:1px solid black;
 }
 .table-header{
     border:1px solid black;
+}
+#autor{
+    margin-left: 30px;
+    
+    
+}
+
+#komentar{
+    margin-left: 30px;
+    visibility: hidden;
+
+
+
+    
+    
+}
+.smallred{
+    color:#9e0303;
+}
+
+#detalji{
+    display: block;
+    margin-right: 10px;
+    margin-left: 30px;
+    width: 60%;
+    
+}
+
+#komentar-blok{
+    
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+ 
+}
+#show{
+    width: 100%;
+    height: 100%;
+    float: left;
+    
+
+
+}
+
+#ostavi-komentar{
+    border: 1px solid #9e0303; 
+    
+    position:relative; 
+    margin-top:0px auto;
+    padding: 10px;
+    right: 30px;
+
+    float: right;
+    display: inline-block;
+    
+
+
+
+}
+
+#ostavi-komentar-div{
+    
+    top:340px;
+    
+    width: 30%;
+    margin-left:690px; 
+    position: absolute;
+    bottom: 0px;
+
+
+}
+
+.komentar-border{
+    width:40%; 
+    border: 1px solid #9e0303;
+    padding: 20px;
+    
+}
+
+#komentar-post{
+    color:#9e0303;
+    padding-bottom: 20px;
+}
+
+.komentar-unos{
+
+    width:250px;
+     height:20px;
+}
+.komentar-labela{
+    font-size: 20px;
+    color: #08430d;
+
 }
 
